@@ -1,0 +1,28 @@
+{"frames": {
+
+"fireball_1.png":
+{
+	"frame": {"x":0,"y":0,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+},
+"fireball_2.png":
+{
+	"frame": {"x":16,"y":0,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "projectiles.png",
+	"format": "RGBA8888",
+	"size": {"w":32,"h":16},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:fe75de23135d15f4039b215fe0ddc951:b9d7c85e1cbf1d017f2d0759edf81034:9b6e6842273e8724f51d1457138f1678$"
+}
+}

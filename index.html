@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>		
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<title>2ch Dungeon</title>	
+    <link rel="stylesheet" type="text/css" href="css/style.css"></link>	   
+</head>
+			
+<body>
+    <div class="main">
+        <div class="container lobby" id="container-lobby">
+        
+            <div class="center" id="container-menu">
+                    <div id="crowbar-logo"></div>
+                    <div class="player-options">
+                        <input type="text" class="menu-option player-name-input" id="player-name-input" 
+                            tabindex="0" placeholder="Enter your name here" maxlength="16"> 
+                        <select class="room-select btn-hollow btn-hollow-selected menu-option" id="room-select-main">
+                            <optgroup id="room-opts" label="Комнаты"></optgroup>                        
+                        </select>                    
+                        <a class="btn btn-darken menu-option noselect" id="btn-join">Играть!</a> 
+                        <a class="btn btn-darken menu-option noselect" id="btn-create">Создать комнату</a>                   
+                    </div>                              
+            </div>
+        
+            <div class="center" id="container-room">
+                <div id="room-desc">
+                    <div id="room-desc-text">
+                        <span id="invite-link-text">Комната: </span>                       
+                        <span id="room-id"></span>
+                    </div>
+                </div>
+                <div id="room-menu-columns">
+                    <div id="room-menu-members" class="room-menu-block">                        
+                        <div id="team-menu-member-list">
+                            <div class="team-menu-member">
+                                <div class="icon icon-leader" data-playerid="0"></div>
+                                <div class="name menu-option">
+                                    <div class="name-text"></div>
+                                </div>
+                            </div>
+                            <div class="team-menu-member">
+                                <div class="icon" data-playerid="1"></div>
+                                <div class="name menu-option">
+                                    <div class="name-text"></div>
+                                </div>
+                            </div>
+                            <div class="team-menu-member">
+                                <div class="icon" data-playerid="2"></div>
+                                <div class="name menu-option">
+                                    <div class="name-text"></div>
+                                </div>
+                            </div>
+                            <div class="team-menu-member">
+                                <div class="icon" data-playerid="3"></div>
+                                <div class="name menu-option">
+                                    <div class="name-text"></div>
+                                </div>
+                            </div>
+                            <div class="team-menu-member">
+                                <div class="icon" data-playerid="4"></div>
+                                <div class="name menu-option">
+                                    <div class="name-text"></div>
+                                </div>
+                            </div>
+                        </div>                                                                   
+                    </div>                                          
+                    <div id="room-menu-options" class="room-menu-block">
+                        <a class="btn btn-darken menu-option noselect" id="btn-room-start">Играть!</a>    
+                    </div>                
+                </div>    
+                <div class="chat" id="chat-lobby" ></div>   
+                <input type="text" class="chat-input" id="chat-input" 
+                    placeholder="Enter your message here" maxlength="48">                         
+                <a class="btn btn-darken menu-option noselect" id="btn-room-leave">Покинуть комнату</a>                       
+            </div>    
+            <div id="ver-container">ver 0.1.0</div>        
+        </div>    
+        
+        <div class="container" id="container-game">            
+	        <canvas class="pixelated" id="game-canvas">Canvas init error</canvas>
+            <div class="center menu" id="container-game-menu">
+                <a class="btn btn-darken menu-option noselect" id="btn-game-settings">Настройки</a>  
+                <a class="btn btn-darken menu-option noselect" id="btn-game-leave">Выйти в лобби</a> 
+            </div>
+        </div>
+    </div>
+    <script src="vendor.js"></script> 
+    <script src="app.js"></script>   	     
+</body>
+</html>
